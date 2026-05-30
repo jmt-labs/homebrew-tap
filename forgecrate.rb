@@ -5,12 +5,12 @@
 class Forgecrate < Formula
   desc "Reproducible Claude Code setup for any repository."
   homepage "https://github.com/jmt-labs/forgecrate"
-  version "0.4.0"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jmt-labs/forgecrate/releases/download/v0.4.0/forgecrate_0.4.0_darwin_arm64.tar.gz"
-      sha256 "72c2567549cb23cef6141ab371891010a25a85b7367d41a1467db00046e3b398"
+      url "https://github.com/jmt-labs/forgecrate/releases/download/v0.4.1/forgecrate_0.4.1_darwin_arm64.tar.gz"
+      sha256 "166b18f224a4c841d191dcf676ce1df24f0e1062b45ecba64a0310e2d448b0a1"
 
       define_method(:install) do
         bin.install "forgecrate"
@@ -20,15 +20,15 @@ class Forgecrate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmt-labs/forgecrate/releases/download/v0.4.0/forgecrate_0.4.0_linux_amd64.tar.gz"
-      sha256 "f03460719eff90ed3494dc1d1136bbecb820fd9175de24d86e21b1198ad5c2b2"
+      url "https://github.com/jmt-labs/forgecrate/releases/download/v0.4.1/forgecrate_0.4.1_linux_amd64.tar.gz"
+      sha256 "2e4e9d2239a1b52db4424054aa3f2171bfaf6195912f4ca7654e3ad884f95874"
       define_method(:install) do
         bin.install "forgecrate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmt-labs/forgecrate/releases/download/v0.4.0/forgecrate_0.4.0_linux_arm64.tar.gz"
-      sha256 "f2bf03077c27f71c863d62ef91aef06b6271e35593828deaca5fec46e8e4f2a0"
+      url "https://github.com/jmt-labs/forgecrate/releases/download/v0.4.1/forgecrate_0.4.1_linux_arm64.tar.gz"
+      sha256 "619bb2fb52fab3f766c362cee86b29156095b22a23a88890b71cd29f8f851492"
       define_method(:install) do
         bin.install "forgecrate"
       end
